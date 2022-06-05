@@ -11,13 +11,12 @@ h1.splash-logo {
 	font-family: 'Oxygen', sans-serif;
 	font-size: 80px;
 	color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-  z-index: 50;
+  z-index: 1;
 }
 
 h1 span {
 	padding-left: 1rem;
 	color: white;
-	z-index: 10;
 }
 .triangle {
 	position: absolute;
