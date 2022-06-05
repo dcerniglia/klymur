@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+<<<<<<< HEAD
     "start": "ng serve --open",
+=======
+    "start": "ng serve",
+>>>>>>> 377dba85106d8e17ad66218d60adaad7a83a1768
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,7 +22,10 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+<<<<<<< HEAD
     "bootstrap": "^5.1.3",
+=======
+>>>>>>> 377dba85106d8e17ad66218d60adaad7a83a1768
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
