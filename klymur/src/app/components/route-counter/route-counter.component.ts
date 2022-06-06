@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'klym-route-counter',
@@ -6,23 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./route-counter.component.scss']
 })
 export class RouteCounterComponent implements OnInit {
+  @Input() gradeName: string = 'no name';
+  @Input() count = 0;
 
-  countNumber = 0;
+  isEditing: boolean = false;
 
-  resetBtn()
-  {
-    this.countNumber = 0;
+  toggleEdit() {
+    this.isEditing = !this.isEditing;
   }
 
-  increaseBtn()
-  {
-    this.countNumber = this.countNumber + 1;
+  resetCount() {
+    this.count = 0;
   }
 
-  decreaseBtn(){
-    this.countNumber = this.countNumber - 1;
-    if(this.countNumber<0) {
-      this.countNumber = 0;
+  increaseCount() {
+    this.count = this.count + 1;
+  }
+
+  decreaseCount() {
+    this.count = this.count - 1;
+    if (this.count < 0) {
+      this.count = 0;
     }
   }
 

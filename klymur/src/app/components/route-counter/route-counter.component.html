@@ -1,19 +1,19 @@
-<div class="row">
-
-    <div class="col-lg-3">
-        <button class="btn btn-dark" (click)="decreaseBtn()">-</button>
+<div class="row mb-3">
+    <div class="col">
+        <p>{{ gradeName }}</p>
+    </div>
+    <div *ngIf="isEditing" class="col">
+        <button class="btn btn-dark" (click)="decreaseCount()">-</button>
+    </div>
+    <div class="col">{{ count }}</div>
+    <div *ngIf="isEditing" class="col">
+        <button class="btn btn-dark" (click)="increaseCount()">+</button>
+    </div>
+    <div *ngIf="isEditing" class="col">
+        <button class="btn btn-dark" (click)="resetCount()">Reset</button>
+    </div>
+    <div class="col">
+        <button class="btn btn-dark" (click)="toggleEdit()">{{ isEditing ? 'Save' : 'Edit' }}</button>
     </div>
 
-    <div class="col-lg-3">
-        {{countNumber}}
-    </div>
-    
-    <div class="col-lg-3">
-        <button class="btn btn-dark" (click)="increaseBtn()">+</button>
-    </div>
-
-    <div class="col-lg-3">
-        <button class="btn btn-dark" (click)="resetBtn()">Reset</button>
-    </div>
-    
 </div>
