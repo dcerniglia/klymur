@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouteTimerComponent } from './components/route-timer/route-timer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RouteTimerComponent
   ],
   imports: [
     BrowserModule,
