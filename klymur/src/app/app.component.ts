@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'klymur';
+
+  _start: boolean=false;
+  constructor(){
+  }
+
+  ngOnInit(){
+  }
+
+  start(){
+    this._start=true;
+  }
+  clear(){
+    this._start=false;
+  }
 }
