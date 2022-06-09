@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Select a grading system</option>
+            <option value="ascend">Ascend Bouldering</option>
+            <option value="beginner">Beginner Grades</option>
+            <option value="intermediate">Intermediate Grades</option>
+            <option value="pro">Pro Grades</option>
+        </select>
+    </div>
+    <div class="row">
+        <!-- grayed out until system is selected -->
+        <div class="col">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select a grade</option>
+                <option *ngFor="" value="">Dynamic</option>
+            </select>
+        </div>
+    </div>
+</div>

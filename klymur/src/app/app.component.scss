@@ -1,0 +1,40 @@
+:host {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+h1.splash-logo {
+	position: relative;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 80px;
+	color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+  z-index: 1;
+}
+
+h1 span {
+	padding-left: 1rem;
+	color: white;
+}
+.triangle {
+	position: absolute;
+	right: -155px;
+  bottom: 0px;
+  width: 510px;
+  height: 750px;
+  background: red linear-gradient(red, blue);
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+}
+
+
+.triangle-two {
+	position: absolute;
+  bottom: 0px;
+	left: -100px;
+  width: 300px;
+  height: 400px;
+  background: red linear-gradient(yellow, blue);
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+}
