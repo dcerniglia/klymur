@@ -10,9 +10,11 @@ export class RouteCounterComponent implements OnInit {
   @Input() count = 0;
 
   isEditing: boolean = false;
+  modifyNumber: boolean = true;
 
   toggleEdit() {
     this.isEditing = !this.isEditing;
+    this.modifyNumber = !this.modifyNumber;
   }
 
   resetCount() {

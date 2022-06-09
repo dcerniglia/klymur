@@ -18,13 +18,13 @@ export const fakeGrades: Array<Grade> = [
 		numberOfClimbs: 11
 	},
 	{
-		display: 'v2/3',
-		isIndoor: true,
-		numberOfClimbs: 9
-	},
-	{
 		display: 'v3',
 		isIndoor: true,
 		numberOfClimbs: 7
+	},
+	{
+		display: 'v4',
+		isIndoor: true,
+		numberOfClimbs: 15
 	},
 ]
