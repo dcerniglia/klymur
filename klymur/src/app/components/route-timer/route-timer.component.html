@@ -1,0 +1,32 @@
+<!--
+
+- overall workout timer
+- stop button should automatically add time to workout timer
+- time spent / overall % of time spent climbing on specific grades of routes
+- manual entry
+
+-->
+
+<div class="container">
+	<section class="timer-counter-label">
+		<div *ngIf="counter" [ngClass]="{blink: !running}">
+			<span>{{minutes}}:</span><span>{{seconds}}</span>  </div>
+		<div *ngIf="!counter">
+            <span class="blink timer-start-text">Send it!</span>
+			<br>
+			<span>{{minutes}}:</span><span>{{seconds}}</span> 
+		</div>
+	</section>
+	<div class="timer-button-container" *ngIf="showTimerControls">
+		<button btn btn-success class="timer-button" (click)="startTimer()">
+			{{ startText }}
+		</button>
+		<!-- <button [disabled]='!counter' [ngClass]="{'disabled': !counter}" class="timer-button" (click)="lapTimeSplit()">Lap</button> -->
+		<button btn btn-warning class="timer-button" (click)="clearTimer()">Clear</button>
+		<br>
+		<div *ngFor="let lap of laps;let i = index">
+			<div> &#9873; <b>Lap {{i+1}} ::</b>  {{lap}}</div>
+			<br>
+		</div>
+	</div>
+</div>
