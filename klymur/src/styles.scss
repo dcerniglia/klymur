@@ -1,0 +1,17 @@
+// Default variable overrides (must precede Bootstrat import)
+$primary: black;
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Paytone+One&display=swap');
+
+// Variables
+
+
+// Styles
+
+html {
+	height: 100vh;
+}
