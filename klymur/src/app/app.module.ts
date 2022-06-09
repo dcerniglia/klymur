@@ -8,7 +8,7 @@ import { RouteSelectorComponent } from './route-selector/route-selector.componen
 @NgModule({
   declarations: [
     AppComponent,
-    RouteSelectorComponent
+    RouteSelectorComponent,
   ],
   imports: [
     BrowserModule,
