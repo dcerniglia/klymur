@@ -1,3 +1,4 @@
+import { keyframes } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -32,7 +33,7 @@ export class RouteCounterComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }

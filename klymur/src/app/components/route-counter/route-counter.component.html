@@ -1,11 +1,11 @@
-<div class="routes row mb-3">
+<div class="routes row mb-3 d-flex align-items-center">
     <div class="col">
-        <p>{{ gradeName }}</p>
+        <p class="number-display mb-0">{{ gradeName }}</p>
     </div>
     <div class="col">
         <button class="btn btn-dark btn-sm" (click)="decreaseCount()" [disabled]="modifyNumber">-</button>
     </div>
-    <div class="col number-count">{{ count }}</div>
+    <div class="col number-display">{{ count }}</div>
     <div class="col">
         <button class="btn btn-dark btn-sm" (click)="increaseCount()" [disabled]="modifyNumber">+</button>
     </div>
